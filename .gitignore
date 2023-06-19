@@ -1,0 +1,10 @@
+__pycache__
+
+#images
+/images/equipments/
+/images/invoices/
+
+#Environments files
+.env
+
+!.gitkeep
