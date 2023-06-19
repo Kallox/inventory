@@ -26,11 +26,11 @@ from routes.sub_locations import sub_locations
 from routes.Suppliers_supplies import suppliers_supplies
 
 def create_tables():
-    Base.metadata.drop_all(bind=engine)
+    #Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
 
-#create_tables()
+create_tables()
 app = FastAPI()
 app.mount("/images", StaticFiles(directory="images"), name="images")
 app.add_middleware(
