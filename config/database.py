@@ -5,11 +5,11 @@ from dotenv import dotenv_values
 
 config = dotenv_values(".env")
 
-username = config['USERNAME']
-password = config['PASSWORD']
-database = config['DATABASE']
-ip = config['IP']
-port = config['PORT']
+username = "postgres"
+password = "7FgV77wBtmdIhS2dSUMl"
+database = "railway"
+ip = "containers-us-west-184.railway.app"
+port = 5892
 
 DATABASE_URL = f"postgresql://{username}:{password}@{ip}:{port}/{database}"
 engine = create_engine(DATABASE_URL, pool_size=20, max_overflow=0)
